@@ -1,0 +1,15 @@
+body{
+   background: url("image/bg.jpg") no-repeat center fixed ;
+   background-size: cover;
+}
+h1{
+   color: white;
+   font: optional;
+   text-align: center;
+   width: 300px;
+   padding: 20px;
+   border: solid greenyellow;
+   margin-left: 350px;
+   margin-top: 350px;
+   font-family: 'Edu SA Beginner', cursive;
+}

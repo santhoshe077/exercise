@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<style> 
+body { 
+font-family: Arial, sans-serif; 
+background-image:url("green_tree_desert-wallpaper-1920x1080.jpg"); 
+margin: 0; 
+padding: 0; 
+} 
+</style> 
+<head> 
+<title>Online Gaming Registration</title> 
+</head> 
+<body> 
+<center> 
+<h2>Sign In/ Sign Up</h2> 
+<form method="post" action="ex6end.html"> 
+<label for="name">Name:</label> 
+<input type="text" name="name" required><br><br> 
+<label for="email">Email:</label> 
+<input type="email" name="email" required><br><br>
+<label for="password">Password:</label> 
+<input type="password" name="password" required><br><br> 
+<label for="gender">Gender:</label> 
+<input type="radio" name="gender" value="Male" required> Male 
+<input type="radio" name="gender" value="Female" required> Female 
+<input type="radio" name="gender" value="Other" required> Other<br><br> 
+<label for="country">Country:</label> 
+<select name="country" required> 
+<option value="India">India</option> 
+<option value="Canada">Canada</option> 
+<option value="UK">UK</option> 
+<option value="Other">Other</option> 
+</select><br><br> 
+<input type="submit" name="submit" value="Register"> 
+</form> 
+</center> 
+<?php 
+if (isset($_POST['submit'])) { 
+echo "<h2>Registration Details:</h2>"; 
+echo "Name: " . $_POST['name'] . "<br>"; 
+echo "Email: " . $_POST['email'] . "<br>"; 
+echo "Gender: " . $_POST['gender'] . "<br>"; 
+echo "Country: " . $_POST['country'] . "<br>"; 
+} 
+?> 
+</body> 
+</html> 
